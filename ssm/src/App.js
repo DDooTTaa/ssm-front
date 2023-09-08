@@ -69,6 +69,12 @@ function App() {
         todos.map((todo) => (todo.id === id ? { ...todo, isImportant: !todo.isImportant } : todo)),
     );
   };
+  const onChangeToggle = (id, word) => {
+    console.log(word);
+    setTodos(
+        todos.map((todo) => (todo.id === id ? { ...todo, isImportant: !todo.isImportant, title: word } : todo)),
+    );
+  }
   const chooseSentence = () => {
     setRandomCount(randomCount + 1);
     setSentence(randomCount % 2 === 0 ? underRandomWord[Math.floor(Math.random() * underRandomWord.length)] : upperRandomWord[Math.floor(Math.random() * upperRandomWord.length)] );
@@ -111,7 +117,7 @@ function App() {
         {sentence === '' ? <></> :
             <>
             {changeMode ? <></> : <CreateSentence title={title} onCreate={onCreate} onChange={onChange} word={sentence} isUpper={randomCount}/>}
-            <SentenceList todos={todos} onRemove={onRemove} onToggle={onToggle} word={sentence}/>
+            <SentenceList todos={todos} onRemove={onRemove} onToggle={onToggle} onChangeToggle={onChangeToggle}/>
             </>
         }
         {todos.length === 0 ? <></> :
