@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body,
+html {
+  font-size: 25px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+input,
+button {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: white;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+  border-bottom-color: #0078ff;
+}
+
+button:focus {
+  outline: none;
+}
+
+.todo-logo {
+  font-size: 40px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.app-wrapper {
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.remove-bt,
+.important-bt {
+  vertical-align: top;
+  margin-top: 2px;
+  font-size: 15px;
+  background: #ff707e;
+  color: white;
+  border-radius: 5px;
+  padding: 0.25rem;
+  height: 34px;
+}
+
+.important-bt {
+  background: #00d28c;
+  margin-right: 5px;
+}
+
+.important-bt:hover {
+  background: #3fe0ab;
+}
+
+.remove-bt:hover {
+  background: #ff8e99;
+}
+
+.create-wrapper {
+  padding: 1rem;
+}
+
+.create-bt {
+  background: #0078ff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 18px;
+  color: white;
+}
+
+.create-bt:hover {
+  background: dodgerblue;
+}
+
+.create-title {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  margin-right: 5px;
+  border-bottom: 2px solid #bbb;
+  padding: 0.3rem;
+}
+
+.todo-title {
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  width: 333px;
+  text-align: left;
+  color: #171760;
+}
+
+.todo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 53%;
+  padding: 0.3rem;
+  background: #ececff;
+  border-radius: 5px;
+}
+
+.sentence-button {
+  color: #ff707e;
+  }
+
+.choose-sentence {
+  color: #ececff;
+  background: #ff707e;
+  border: 3px solid #ff707e;
+  border-radius: 30px;
+  padding: 8px 95px;
+  margin-top: 40px;
+  font-size: 28px;
+}
+.button-wrapper {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+.word {
+  color: black;
+  font-size: 48px;
+}
+.change-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.change-input {
+  border-bottom: 2px solid #bbb;
+  width: 120px;
+  margin-left: 8px;
+}
+.change-word {
+  color: #bbbbbb;
+}
+.all-change {
+  color: white;
+  border-radius: 5px;
+  background: #00d28c;
+  height: 36px;
+  margin-left: 5px;
+}
