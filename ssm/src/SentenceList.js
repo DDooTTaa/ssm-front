@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 
 function Sentence({ todo, onRemove, onToggle, onChangeToggle }) {
     const { id, title, isImportant } = todo;
-    const [modifyWord, setModifyWord] = useState('');
+    const [modifyWord, setModifyWord] = useState('안녕');
     const onChange = (e) => {
         setModifyWord(e.target.value);
     }
