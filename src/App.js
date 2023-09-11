@@ -4,9 +4,9 @@ import SentenceList from './SentenceList';
 import './App.css';
 
 //가 (끝에 받침 없음)
-const underRandomWord = ['의자','감자', '커피', '버스', '담배', '나무', '비', '해', '대파', '소화기', '배'];
+const underRandomWord = ['의자','감자', '커피', '버스', '담배', '나무', '비', '해', '대파', '소화기', '배', '경고', '버그', '위기'];
 //이 (끝에 받침 있음)
-const upperRandomWord = ['달','책상', '섬', '꽃', '커튼', '선인장', '벚꽃', '칼', '별', '결혼', '꿀', '총', '병', '가을'];
+const upperRandomWord = ['달','책상', '섬', '꽃', '커튼', '선인장', '벚꽃', '칼', '별', '결혼', '꿀', '총', '병', '가을', '간', '연인', '인연', '끝'];
 
 function App() {
   const appTitle = '진부하지 않은 문장 만들기';
@@ -124,7 +124,7 @@ function App() {
             <div className='change-wrapper'>
               <p className='change-word'>바꿀 단어:</p>
               <input placeholder={sentence} onChange={onWordChange} className='change-input' onKeyDown={runScript}/>
-              <button className='all-change' onClick={allChange}>모두 바꾸기</button>
+              <button className='all-change' onClick={allChange}>바꾸기</button>
             </div>
         }
       </div>
